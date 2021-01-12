@@ -113,7 +113,7 @@ for element in range(len(elements_list)):
 # It's easy to build a simple periodic table. 
 #I'll use Hydrogen as the reference element
 
-class Tabla_Periodica_simple(Scene):
+class Periodic_Table(Scene):
     def construct(self):
 
         #Group 1
@@ -336,9 +336,9 @@ class Tabla_Periodica_simple(Scene):
         f_block = VGroup(lantanidos,actinidos)
 
 
-        tabla_periodica = VGroup(bloque_s, bloque_d, bloque_p, bloque_f)
-        tabla_periodica.scale(0.38)
-        tabla_periodica.shift(9*UP+13*LEFT)
+        periodic_table = VGroup(bloque_s, bloque_d, bloque_p, bloque_f)
+        periodic_table.scale(0.38)
+        periodic_table.shift(9*UP+13*LEFT)
         self.wait()
         self.play(Write(tabla_periodica), run_time = 5)
         self.wait()
